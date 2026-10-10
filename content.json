@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "saved": "2026-10-10T18:23:47.565Z",
+  "sections": {
+    "hero": "\n      <div class=\"status glass bd\"><b></b>Jamoaga va yangi loyihalarga ochiqman</div>\n      <h1>Muhammadaziz Anvarov</h1>\n      <p class=\"role\">Dasturchi: frontend + backend</p>\n      <p class=\"sub\">React, JavaScript, PHP, Python va React Native bilan veb va mobil ilovalar yarataman. Maktab uchun boshqaruv tizimi va Telegram bot ustida ishlayman, bu blogda esa oʻrganganlarimni yozib boraman.</p>\n      <div class=\"cta\">\n        <a class=\"btn primary\" href=\"#blog\">Blogni oʻqish</a>\n        <a class=\"btn\" href=\"#projects\">Loyihalarim</a>\n      </div>\n    ",
+    "about": "\n    <div class=\"stats\">\n      <div class=\"stat glass lift\"><strong>5</strong><span>asosiy texnologiya</span></div>\n      <div class=\"stat glass lift\"><strong>1 yil</strong><span>yolgʻiz ishlash tajribasi</span></div>\n      <div class=\"stat glass lift\"><strong>B2</strong><span>Multilevel sertifikati</span></div>\n      <div class=\"stat glass lift\"><strong>~3 oy</strong><span>IELTS topshirishgacha</span></div>\n    <div class=\"stat glass lift\"><strong>~1yil</strong><span>SAT topshirishga qadar</span></div></div>\n    <div style=\"height:52px\"></div>\n    <h2>Men haqimda</h2>\n    <div class=\"bio\">\n      <p>Men Muhammadaziz Anvarov, dasturchiman. Frontend va backend bilan birdek shugʻullanaman: React va JavaScript bilan interfeys, PHP va Python bilan server tomoni, React Native bilan mobil ilovalar yarataman.</p>\n      <p>Hozir asosiy loyiham — maktab uchun PHP asosidagi boshqaruv tizimi. U oʻquvchilar, baholar va toʻlovlarni bir joyda yuritadi, interfeysi esa toʻliq oʻzbek tilida. Unga Telegram bot ham qoʻshganman: ota-onalar va oʻquvchilar baho va toʻlovlarni bot orqali koʻra oladi.</p>\n      <p>Jamoada ham, yolgʻiz ham ishlay olaman. Ingliz tilini Multilevel B2 darajasida bilaman va hozir taxminan 3 oydan keyin topshirmoqchi boʻlgan IELTS imtihoniga tayyorlanyapman.</p>\n    </div>\n    <div class=\"grid2\" data-list=\"\">\n      <article class=\"card glass lift\">\n        <div class=\"ico\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"9\" cy=\"8\" r=\"3\"></circle><circle cx=\"17\" cy=\"9\" r=\"2.4\"></circle><path d=\"M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15.5 14.4c2.7-.3 5.5 1.4 5.5 4.6\"></path></svg></div>\n        <h3>Jamoada ishlayman</h3>\n        <p>Vazifalarni boʻlishish, kodni birga koʻrib chiqish va fikrni ochiq aytishni yaxshi koʻraman. Jamoa ichida tez oʻrganaman va boshqalarga ham yordam beraman.</p>\n      </article>\n      <article class=\"card glass lift\">\n        <div class=\"ico\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z\"></path></svg></div>\n        <h3>Yolgʻiz ham ishlay olaman</h3>\n        <p>1 yillik mustaqil tajribam bor: gʻoyadan boshlab dizayn, frontend, backend va ishga tushirishgacha oʻzim hal qilaman.</p>\n      </article>\n    </div>\n  ",
+    "skills": "\n    <h2>Texnologiyalar</h2>\n    <p class=\"lead\">Kundalik ishda ishlatadigan asboblarim va hozir oʻrganayotganlarim.</p>\n    <div class=\"grid3\" data-list=\"\">\n      <div class=\"card glass lift\">\n        <h3>Frontend</h3>\n        <div class=\"tags\"><span class=\"tag\">React</span><span class=\"tag\">JavaScript</span><span class=\"tag\">HTML</span><span class=\"tag\">CSS</span></div>\n        <ul class=\"list\"><li>Telefon va kompyuterga moslashgan interfeyslar</li><li>Qorongʻu va yorugʻ rejimli dizayn</li></ul>\n      </div>\n      <div class=\"card glass lift\">\n        <h3>Backend</h3>\n        <div class=\"tags\"><span class=\"tag\">PHP</span><span class=\"tag\">Python</span><span class=\"tag\">MySQL</span><span class=\"tag\">Telegram Bot API</span></div>\n        <ul class=\"list\"><li>Maʼlumotlar bazasi bilan ishlash</li><li>Telegram botlar va ularning mantiqi</li></ul>\n      </div>\n      <div class=\"card glass lift\">\n        <h3>Mobil ilovalar</h3>\n        <div class=\"tags\"><span class=\"tag\">React Native</span></div>\n        <ul class=\"list\"><li>Bitta kod bazasidan telefon uchun ilova</li><li>React tajribasiga tayanadi</li></ul>\n      </div>\n    </div>\n  ",
+    "services": "\n    <h2>Nimalar qila olaman</h2>\n    <p class=\"lead\">Quyidagi yoʻnalishlarda loyiha yoki vazifani oʻz zimmamga ola olaman.</p>\n    <div class=\"grid3\" data-list=\"\">\n      <article class=\"card glass lift\"><h3>Veb-saytlar va ilovalar</h3><p>Shaxsiy sahifa, landing va boshqaruv panellari: dizayndan tayyor sahifagacha.</p></article>\n      <article class=\"card glass lift\"><h3>Backend va maʼlumotlar bazasi</h3><p>PHP yoki Python da server tomoni, MySQL bazasi va unga mos tuzilma.</p></article>\n      <article class=\"card glass lift\"><h3>Telegram botlar</h3><p>Maʼlumot koʻrsatadigan, foydalanuvchini tanib oladigan va menyu bilan ishlaydigan botlar.</p></article>\n      <article class=\"card glass lift\"><h3>Mobil ilovalar</h3><p>React Native bilan telefon uchun ilova yaratish.</p></article>\n      <article class=\"card glass lift\"><h3>Taʼlim tizimlari</h3><p>Maktab uchun oʻquvchilar, baholar va toʻlovlarni yuritadigan tizimlar.</p></article>\n      <article class=\"card glass lift\"><h3>Jamoaviy ish</h3><p>Mavjud jamoaga qoʻshilib, frontend yoki backend vazifalarini bajarish.</p></article>\n    </div>\n  ",
+    "process": "\n    <div class=\"glass card\" style=\"padding:clamp(22px,4vw,34px)\">\n      <h2 style=\"font-size:1.5rem\">Ish jarayonim</h2>\n      <ol class=\"steps\" style=\"margin-top:22px\">\n        <li><span class=\"dot\">1</span><div><b>Talabni aniqlash</b><span>Nima kerakligi va kim foydalanishini tushunib olaman.</span></div></li>\n        <li><span class=\"dot\">2</span><div><b>Reja va dizayn</b><span>Sahifalar va maʼlumotlar tuzilmasini oldindan chizaman.</span></div></li>\n        <li><span class=\"dot\">3</span><div><b>Kod yozish</b><span>Frontend va backend qismlarini bosqichma-bosqich yozaman.</span></div></li>\n        <li><span class=\"dot\">4</span><div><b>Sinash va ishga tushirish</b><span>Xatolarni topaman va tizimni ishga tushiraman.</span></div></li>\n        <li><span class=\"dot\">5</span><div><b>Qoʻllab-quvvatlash</b><span>Foydalanuvchilar fikriga qarab yaxshilayman.</span></div></li>\n      </ol>\n    </div>\n    <div class=\"glass card\" id=\"english\" style=\"padding:clamp(22px,4vw,34px)\">\n      <h2 style=\"font-size:1.5rem\">Ingliz tili</h2>\n      <p class=\"lead\" style=\"margin-bottom:22px\">Texnik hujjatlarni oʻqish va xalqaro jamoalarda ishlash uchun tilni muntazam rivojlantiryapman.</p>\n      <ol class=\"steps\">\n        <li><span class=\"dot\">✓</span><div><b>Multilevel — B2</b><span>Sertifikat olingan</span></div></li>\n        <li class=\"now\"><span class=\"dot\">•</span><div><b>IELTS ga tayyorgarlik</b><span>Hozirgi bosqich</span></div></li>\n        <li class=\"todo\"><span class=\"dot\"></span><div><b>IELTS imtihoni</b><span>Taxminan 3 oydan keyin topshiraman</span></div></li>\n      </ol>\n      <div class=\"tags\" style=\"margin-top:22px\"><span class=\"tag\">Listening</span><span class=\"tag\">Reading</span><span class=\"tag\">Writing</span><span class=\"tag\">Speaking</span></div>\n    </div>\n  ",
+    "projects": "\n    <h2>Loyihalar</h2>\n    <p class=\"lead\">Hozir ustida ishlayotgan va bajarilgan ishlar.</p>\n    <div class=\"grid3\" data-list=\"\">\n      <article class=\"project card glass lift\">\n        <div class=\"pbar\"></div><span class=\"badge\">Rivojlanmoqda</span>\n        <h3>Maktab boshqaruv tizimi</h3>\n        <p>Maktab uchun PHP asosidagi tizim: oʻquvchilar, baholar va toʻlovlar bir joyda.</p>\n        <ul class=\"list\"><li>Interfeys toʻliq oʻzbek tilida</li><li>Maʼlumotlar MySQL bazasida</li><li>OpenServer muhitida ishlaydi</li></ul>\n        <div class=\"tags\"><span class=\"tag\">PHP</span><span class=\"tag\">MySQL</span></div>\n      </article>\n      <article class=\"project card glass lift\">\n        <div class=\"pbar\"></div><span class=\"badge\">Sinovdan oʻtmoqda</span>\n        <h3>Telegram bot</h3>\n        <p>Ota-onalar va oʻquvchilar bot orqali baho va toʻlovlarni koʻradi.</p>\n        <ul class=\"list\"><li>Oʻquvchini tanlash va parol bilan kirish</li><li>Notoʻgʻri urinishlardan keyin bloklash</li><li>Yangilanishlar long-polling orqali olinadi</li></ul>\n        <div class=\"tags\"><span class=\"tag\">PHP</span><span class=\"tag\">Telegram Bot API</span></div>\n      </article>\n      <article class=\"project card glass lift\">\n        <div class=\"pbar\"></div><span class=\"badge\">Tayyor</span>\n        <h3>Shaxsiy blog</h3>\n        <p>Siz hozir koʻrib turgan sahifa.</p>\n        <ul class=\"list\"><li>Qorongʻu va yorugʻ rejim</li><li>Telefonga moslashgan dizayn</li><li>Yengil rejim: sekin qurilmalar uchun</li></ul>\n        <div class=\"tags\"><span class=\"tag\">HTML</span><span class=\"tag\">CSS</span><span class=\"tag\">JavaScript</span></div>\n      </article>\n    </div>\n\n    <div style=\"height:44px\"></div>\n    <h2 style=\"font-size:1.4rem\">Keyingi rejalar</h2>\n    <div class=\"grid2\" style=\"margin-top:16px\" data-list=\"\">\n      <div class=\"glass card\"><ol class=\"steps\">\n        <li class=\"now\"><span class=\"dot\">1</span><div><b>Botni barqaror ishlatish</b><span>Xatolarni tuzatib, toʻliq sinovdan oʻtkazish.</span></div></li>\n        <li class=\"todo\"><span class=\"dot\">2</span><div><b>Soʻrovlarni xavfsizroq qilish</b><span>Imkon boʻlganda prepared statement’larga qaytish.</span></div></li>\n      </ol></div>\n      <div class=\"glass card\"><ol class=\"steps\">\n        <li class=\"todo\"><span class=\"dot\">3</span><div><b>Serverga koʻchirish</b><span>Tizim va botni doimiy ishlaydigan serverga oʻtkazish.</span></div></li>\n        <li class=\"todo\"><span class=\"dot\">4</span><div><b>IELTS</b><span>Imtihonga tayyorgarlikni yakunlash.</span></div></li>\n      </ol></div>\n    </div>\n  ",
+    "faq": "\n    <h2>Koʻp soʻraladigan savollar</h2>\n    <div class=\"faq\" style=\"margin-top:24px\">\n      <details class=\"glass\"><summary><span class=\"sum-t\">Qanday loyihalarda ishlay olaman?</span></summary><p>Veb-saytlar, boshqaruv tizimlari, Telegram botlar va React Native yordamida mobil ilovalar. Frontend va backend qismlarini ham alohida, ham birga qila olaman.</p></details>\n      <details class=\"glass\"><summary><span class=\"sum-t\">Jamoaga qoʻshila olasizmi?</span></summary><p>Ha. Jamoa bilan ishlashni yaxshi koʻraman va shu bilan birga 1 yillik yolgʻiz ishlash tajribam ham bor.</p></details>\n      <details class=\"glass\"><summary><span class=\"sum-t\">Qaysi tillarda muloqot qila olasiz?</span></summary><p>Oʻzbek tilida va ingliz tilida (Multilevel B2). Hozir IELTS ga tayyorlanyapman.</p></details>\n      <details class=\"glass\"><summary><span class=\"sum-t\">Siz bilan qanday bogʻlansam boʻladi?</span></summary><p>Quyidagi \"Aloqa\" boʻlimidagi havolalar orqali yozing.</p></details>\n    </div>\n  ",
+    "contact": "\n    <div class=\"contact glass\">\n      <h2>Birga ishlaymizmi?</h2>\n      <p>Jamoa loyihasi, frontend yoki backend vazifasi boʻlsa, yozing.</p>\n      <div class=\"cta\" style=\"justify-content:center\">\n        <a class=\"btn\" href=\"#\" data-todo=\"email\">Email</a>\n        <a class=\"btn primary\" href=\"#\" data-todo=\"telegram\">Telegram</a>\n        <a class=\"btn\" href=\"https://github.com/muhammadaziz20\" target=\"_blank\" rel=\"noopener noreferrer\" data-todo=\"github\">GitHub</a>\n      </div>\n    </div>\n  "
+  },
+  "posts": [
+    {
+      "tag": "Backend",
+      "title": "Telegram bot: long-polling yoki webhook?",
+      "date": "2026-yil, oktabr",
+      "read": "3 daqiqa",
+      "excerpt": "Maktab tizimi uchun bot yozayotib, nega webhook oʻrniga long-pollingni tanladim.",
+      "body": [
+        "Telegram botda yangilanishlarni olishning ikki yoʻli bor: webhook va getUpdates orqali long-polling. Webhook uchun Telegram murojaat qila oladigan ochiq HTTPS manzil kerak.",
+        "Mening tizimim OpenServer orqali noutbukda ishlaydi, shuning uchun tashqaridan unga kirib boʻlmaydi. Shu sababli long-pollingni tanladim: skript Telegramdan yangi xabarlarni oʻzi soʻrab turadi.",
+        "Kamchiligi shundaki, bot faqat noutbuk yoqilgan va skript ishlab turgandagina javob beradi. Tizim serverga koʻchirilganda webhookka oʻtish mantiqiy: javob tezroq boʻladi va skriptni doim ishga tushirib turish shart emas."
+      ]
+    },
+    {
+      "tag": "Backend",
+      "title": "PDO ishlamasa: MySQLi ga oʻtish saboqlari",
+      "date": "2026-yil, oktabr",
+      "read": "3 daqiqa",
+      "excerpt": "PDO drayveri topilmaganda MySQLi ga oʻtdim va bind_param xatosiga duch keldim.",
+      "body": [
+        "Lokal muhitda PDO drayveri mavjud boʻlmadi, shuning uchun bazaga ulanishni MySQLi ga koʻchirdim.",
+        "Eng koʻp vaqtni olgan xato bind_param bilan bogʻliq edi: soʻrov tayyorlanmay qolsa, funksiya false qaytaradi va keyingi chaqiruv 'bool' haqida xato beradi. Yechim: har bir bosqichda natijani tekshirish.",
+        "Vaqtincha oddiy soʻrovlar va real_escape_string ishlatdim. Imkon boʻlganda prepared statement’larga qaytish xavfsizroq, shuning uchun bu keyingi vazifalarimdan biri."
+      ]
+    },
+    {
+      "tag": "Backend",
+      "title": "Bot suhbatini holatlar (state machine) bilan boshqarish",
+      "date": "2026-yil, oktabr",
+      "read": "4 daqiqa",
+      "excerpt": "/start dan asosiy menyugacha: foydalanuvchi qaysi bosqichda ekanini bazada saqlash.",
+      "body": [
+        "Bot har bir foydalanuvchi bilan suhbatni bosqichlarga boʻladi: /start, oʻquvchini tanlash, parol kiritish va asosiy menyu.",
+        "Joriy bosqich bazadagi alohida jadvalda telegram_id boʻyicha saqlanadi. Shunda bot foydalanuvchi oxirgi marta qayerda toʻxtaganini biladi va keyingi xabarni toʻgʻri qayta ishlaydi.",
+        "Jadval ustunlari kod kutgan ustunlarga mos kelmasa, bot jim qolishi mumkin. Menda shunday boʻlganda jadvalni qayta yaratib, ustunlarni kodga moslab hal qildim."
+      ]
+    },
+    {
+      "tag": "Backend",
+      "title": "OpenServer da PHP loyihani lokal ishga tushirish",
+      "date": "2026-yil, oktabr",
+      "read": "3 daqiqa",
+      "excerpt": "Windows noutbukda domains papkasi, MySQL bazasi va fayllarni toʻgʻri joyga qoʻyish.",
+      "body": [
+        "OpenServer da har bir loyiha domains papkasida alohida jildda turadi. Loyiha fayllarini oʻsha jildga nusxalamasangiz, brauzer eski versiyani koʻrsatadi.",
+        "Men bir marta kodni tuzatib, faylni OpenServer papkasiga koʻchirishni unutdim va bot uzoq vaqt ishlamadi. Endi har oʻzgarishdan keyin ishlayotgan fayl aynan shu jilddagi nusxa ekanini tekshiraman.",
+        "MySQL bazasini ham OpenServer ichidan yoqing: baza ishlamasa, PHP xatosi ulanishga oid boʻladi, kodga emas."
+      ]
+    },
+    {
+      "tag": "Frontend",
+      "title": "Glassmorphism: chiroyli va tez ishlashi uchun",
+      "date": "2026-yil, oktabr",
+      "read": "4 daqiqa",
+      "excerpt": "backdrop-filter qimmat effekt: uni qayerda ishlatish va qayerda arzon usul tanlash kerak.",
+      "body": [
+        "Shisha effektining asosi — yarim shaffof fon va backdrop-filter: blur. Lekin har bir kartada blur ishlatsangiz, brauzer har kadrda orqa fonni qayta hisoblaydi va sahifa qotib qolishi mumkin.",
+        "Yechim: blurni faqat bir nechta muhim elementda (menyu, oynalar) qoldiring, qolgan kartalarda gradient fon, yupqa yorugʻ chegara va ichki yorugʻlik bilan shishani taqlid qiling. Koʻrinishi deyarli bir xil, ishlashi esa ancha yengil.",
+        "Katta xiralashtirilgan fon dogʻlari (filter: blur) va cheksiz animatsiyalar ham sekinlashtiradi. Animatsiyani faqat transform va opacity bilan qiling, sahifada koʻrinmay qolganda esa toʻxtating."
+      ]
+    },
+    {
+      "tag": "Frontend",
+      "title": "Telefon uchun birinchi: moslashuvchan dizayn",
+      "date": "2026-yil, oktabr",
+      "read": "3 daqiqa",
+      "excerpt": "Kichik ekrandan boshlab dizayn qilish nega qulay va nimalarga eʼtibor berish kerak.",
+      "body": [
+        "Avval telefon ekrani uchun dizayn qilib, keyin kattaroq ekranlarga kengaytirish osonroq: ortiqcha narsalar oldindan chiqarib tashlanadi.",
+        "Foydalanadigan narsalar: clamp() bilan oʻzgaruvchan shrift oʻlchami, grid va flexbox, hamda iPhone kabi qurilmalardagi xavfsiz hududlar uchun env(safe-area-inset-*).",
+        "Tugmalar barmoq bilan bosishga qulay boʻlishi kerak: kamida taxminan 44 piksel balandlikda."
+      ]
+    },
+    {
+      "tag": "Shaxsiy",
+      "title": "B2 dan keyin: IELTS ga tayyorgarlik",
+      "date": "2026-yil, oktabr",
+      "read": "2 daqiqa",
+      "excerpt": "Multilevel B2 sertifikatidan soʻng navbatdagi maqsad va uni dasturchi kabi rejalashtirish.",
+      "body": [
+        "Multilevel B2 sertifikatim bor, endi taxminan 3 oydan keyin IELTS topshirishni rejalashtiryapman.",
+        "Tayyorgarlikni ham loyiha kabi olib boraman: aniq maqsad, kichik vazifalar va muntazam tekshiruv. Bu blogda jarayonni yozib boraman."
+      ]
+    },
+    {
+      "tag": "Shaxsiy",
+      "title": "Jamoada ishlash va yolgʻiz ishlash: ikkalasidan oʻrganganlarim",
+      "date": "2026-yil, oktabr",
+      "read": "3 daqiqa",
+      "excerpt": "Ikki xil ish usuli menga nimalarni oʻrgatdi.",
+      "body": [
+        "Yolgʻiz ishlaganda hamma qaror menda: dizayndan tortib serverga qadar. Bu tez oʻrgatadi, lekin xatoni oʻzim topishim kerak.",
+        "Jamoada esa kodni boshqalar koʻradi, fikr almashiladi va vazifalar boʻlinadi. Natijada yechim tozaroq va tezroq chiqadi.",
+        "Ikkala tajriba ham kerak: yolgʻizlik mustaqillik beradi, jamoa esa sifat va tezlik."
+      ]
+    }
+  ]
+}
