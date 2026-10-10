@@ -262,6 +262,17 @@ details p{padding:0 24px 22px;color:var(--muted);position:relative}
 .hp{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0}
 .cform .btn[disabled]{opacity:.6;pointer-events:none}
 .dlg p.ok{color:var(--accent2);font-weight:700;font-size:.9rem}
+
+/* ---------- JustForU ---------- */
+.ju-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+@media (max-width:820px){.ju-grid{grid-template-columns:1fr}}
+.ju{position:relative;padding:26px;display:flex;flex-direction:column;gap:12px;text-align:left;font:inherit;color:inherit}
+.ju>*{position:relative}
+.ju p{color:var(--muted);white-space:pre-line}
+.ju-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:6px}
+.btn.sm{padding:9px 16px;font-size:.85rem}
+.ju-empty{color:var(--muted);padding:12px 0}
+.edit-on .ju{cursor:pointer}
 footer{padding:34px 0 48px;text-align:center;color:var(--muted);font-size:.9rem}
 
 /* ---------- Matn ichidagi rasmlar: --img("havola", kenglik, balandlik)-- ---------- */
@@ -360,6 +371,7 @@ html.lite{scroll-behavior:auto}
     <a href="#services">Xizmatlar</a>
     <a href="#projects">Loyihalar</a>
     <a href="#blog">Blog</a>
+    <a href="#justforu">JustForU</a>
     <a href="#contact">Aloqa</a>
   </nav>
   <div class="tools">
@@ -555,6 +567,16 @@ html.lite{scroll-behavior:auto}
     <p class="lead">Amaliyotda uchragan muammolar va ularning yechimlari haqida qisqa yozuvlar.</p>
     <div class="filters" role="group" aria-label="Mavzu boʻyicha saralash" id="filters"></div>
     <div class="posts" id="posts"></div>
+  </div>
+</section>
+
+<section id="justforu" class="cv">
+  <div class="wrap">
+    <div data-s="justforu">
+      <h2>JustForU</h2>
+      <p class="lead">Sizga atab yozilgan kichik loyihalar: havolasini oching yoki HTML kodini yuklab oling.</p>
+    </div>
+    <div class="ju-grid" id="juGrid"></div>
   </div>
 </section>
 
@@ -934,6 +956,7 @@ html.lite{scroll-behavior:auto}
       a.addEventListener("click",function(){editPost(-1)});
       pEl.appendChild(a);
     }
+    renderJU();
   }
   var dlg=$("dlg");
   function openPost(i){
@@ -991,6 +1014,98 @@ html.lite{scroll-behavior:auto}
     title.focus();
   }
 
+
+  /* ================= JUSTFORU ================= */
+  var JU=[];
+  var JU_MAX=300*1024;
+  function safeUrl(u){
+    u=(u||"").trim();if(!u)return"";
+    if(!/^[a-z][a-z0-9+.\-]*:/i.test(u))u="https://"+u;
+    return/^https?:\/\//i.test(u)?u:"";
+  }
+  function juDownload(it){
+    var b=new Blob([it.fileText],{type:"text/plain;charset=utf-8"});
+    var a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=it.fileName||"kod.html";
+    document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(a.href)},1000);
+  }
+  function renderJU(){
+    var g=$("juGrid");if(!g)return;
+    g.innerHTML="";
+    if(!JU.length&&!editing){g.appendChild(mk("p","ju-empty","Tez orada bu yerda yangi narsalar paydo boʻladi."));return}
+    JU.forEach(function(it,i){
+      var c=mk("article","ju glass");
+      c.appendChild(mk("h3","",it.name));
+      if(it.desc)c.appendChild(mk("p","",it.desc));
+      var row=mk("div","ju-actions"),url=safeUrl(it.link);
+      if(url){var a=mk("a","btn primary sm","Havolani ochish");a.href=url;a.target="_blank";a.rel="noopener noreferrer";row.appendChild(a)}
+      if(it.fileText){
+        var d=mk("button","btn sm","Kodni yuklab olish");d.type="button";
+        d.addEventListener("click",function(e){if(editing){e.stopPropagation();return}juDownload(it)});
+        var cp=mk("button","btn sm","Nusxalash");cp.type="button";
+        cp.addEventListener("click",function(e){
+          if(editing){e.stopPropagation();return}
+          var done=function(){cp.textContent="Nusxalandi ✓";setTimeout(function(){cp.textContent="Nusxalash"},1500)};
+          if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(it.fileText).then(done,function(){});
+        });
+        row.appendChild(d);row.appendChild(cp);
+      }
+      if(row.childNodes.length)c.appendChild(row);
+      if(editing){
+        c.addEventListener("click",function(){editJU(i)});
+        var x=mk("span","post-del","×");x.setAttribute("role","button");x.title="Oʻchirish";
+        x.addEventListener("click",function(e){
+          e.stopPropagation();
+          if(!confirm("Bu kartani oʻchirasizmi?"))return;
+          JU.splice(i,1);renderJU();markDirty();
+        });
+        c.appendChild(x);
+      }
+      g.appendChild(c);
+    });
+    if(editing){
+      var ad=mk("button","add-tile post-add","+");ad.type="button";ad.setAttribute("aria-label","Yangi karta qoʻshish");
+      ad.addEventListener("click",function(){editJU(-1)});g.appendChild(ad);
+    }
+  }
+  function editJU(i){
+    var isNew=i<0,it=isNew?{name:"",link:"",desc:"",fileName:"",fileText:""}:JU[i];
+    var cur={fileName:it.fileName||"",fileText:it.fileText||""};
+    eForm.innerHTML="";
+    eForm.appendChild(mk("h3","",isNew?"Yangi karta":"Kartani tahrirlash"));
+    var name=inp("input",it.name),link=inp("input",it.link,"https://..."),desc=inp("textarea",it.desc);
+    desc.style.minHeight="110px";
+    eForm.appendChild(fld("Nomi",name));
+    eForm.appendChild(fld("Havola (ixtiyoriy)",link));
+    var lab=mk("label","file-pick"),fi=document.createElement("input");fi.type="file";fi.accept=".html,.htm,.css,.js,.txt,.json,text/*";
+    var ft=mk("span","ftxt","📎 Fayl tanlash (kichik kod fayli, 300 KB gacha)"),fn=mk("span","fname",cur.fileName);
+    var rm=mk("button","rm","Olib tashlash");rm.type="button";rm.hidden=!cur.fileText;
+    lab.appendChild(fi);lab.appendChild(ft);lab.appendChild(fn);lab.appendChild(rm);
+    var er=mk("p","err","");er.hidden=true;
+    fi.addEventListener("change",function(){
+      var f=fi.files[0];if(!f)return;
+      if(f.size>JU_MAX){fi.value="";er.textContent="Fayl 300 KB dan katta";er.hidden=false;return}
+      var r=new FileReader();
+      r.onload=function(){cur.fileName=f.name;cur.fileText=String(r.result);fn.textContent=f.name;rm.hidden=false;er.hidden=true};
+      r.readAsText(f);
+    });
+    rm.addEventListener("click",function(e){e.preventDefault();e.stopPropagation();cur={fileName:"",fileText:""};fi.value="";fn.textContent="";rm.hidden=true});
+    eForm.appendChild(lab);eForm.appendChild(er);
+    eForm.appendChild(fld("Tavsif (bu nima ekanini tushuntiring)",desc));
+    var row=mk("div","row"),cancel=mk("button","btn","Bekor qilish");cancel.type="button";
+    cancel.addEventListener("click",function(){eDlg.close()});
+    var save=mk("button","btn primary","Saqlash");save.type="submit";
+    row.appendChild(cancel);row.appendChild(save);eForm.appendChild(row);
+    eForm.onsubmit=function(ev){
+      ev.preventDefault();
+      if(!name.value.trim()){name.focus();return}
+      var np={name:name.value.trim(),link:link.value.trim(),desc:desc.value.trim(),fileName:cur.fileName,fileText:cur.fileText};
+      if(isNew)JU.push(np);else JU[i]=np;
+      renderJU();markDirty();eDlg.close();
+    };
+    if(eDlg.showModal)eDlg.showModal();else eDlg.setAttribute("open","");
+    name.focus();
+  }
+
   /* ================= SAQLASH / YUKLASH (JSON) ================= */
   function sanitize(html){
     var t=document.createElement("template");t.innerHTML=html;
@@ -1017,7 +1132,7 @@ html.lite{scroll-behavior:auto}
     return c.innerHTML;
   }
   function collect(){
-    var d={version:1,saved:new Date().toISOString(),sections:{},posts:JSON.parse(JSON.stringify(POSTS))};
+    var d={version:1,saved:new Date().toISOString(),sections:{},posts:JSON.parse(JSON.stringify(POSTS)),justforu:JSON.parse(JSON.stringify(JU))};
     secEls().forEach(function(el){d.sections[el.getAttribute("data-s")]=cleanInner(el)});
     return d;
   }
@@ -1036,6 +1151,11 @@ html.lite{scroll-behavior:auto}
       POSTS=d.posts.filter(validPost).map(function(p){
         return{tag:String(p.tag),title:String(p.title),date:String(p.date||""),read:String(p.read||""),excerpt:String(p.excerpt||""),
                body:p.body.map(String)};
+      });
+    }
+    if(Array.isArray(d.justforu)){
+      JU=d.justforu.filter(function(x){return x&&typeof x.name==="string"}).map(function(x){
+        return{name:String(x.name),link:String(x.link||""),desc:String(x.desc||""),fileName:String(x.fileName||""),fileText:String(x.fileText||"")};
       });
     }
     rebuildTags();renderFilters();renderPosts();
